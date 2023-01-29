@@ -1,0 +1,55 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'androidx.navigation.safeargs.kotlin'
+}
+//importando arquivo que concentra as dependecias do projeto
+apply from: '../dependencies.gradle'
+android {
+    namespace 'com.example.testlivedataxsingleliveevent'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.testlivedataxsingleliveevent"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    viewBinding {
+        enabled true
+    }
+}
+
+dependencies {
+
+    implementation libraries.coreKtx
+    implementation libraries.appCompat
+    implementation libraries.androidMaterial
+    implementation libraries.constraintLayout
+    implementation libraries.coroutine
+    implementation libraries.viewModel
+    implementation libraries.fragmentKtx
+
+
+    testImplementation librariesTest.junit
+    androidTestImplementation librariesTest.junitAndroid
+    androidTestImplementation librariesTest.espressoCore
+}

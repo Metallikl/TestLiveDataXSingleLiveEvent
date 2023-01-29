@@ -1,0 +1,64 @@
+ext {
+    coroutineVersion = "1.3.9"
+    viewmodelKtxVersion = "2.5.1"
+    lifecycleVersion = "2.5.1"
+    archVersion = "2.1.0"
+    retrofitVersion = "2.9.0"
+    glideVersion = "4.12.0"
+    okhttp3Version = "4.10.0"
+    gsonVersion = "2.9.0"
+    fragmentVersion = "1.5.5"
+    navigationVersion = "2.5.3"
+    koinVersion = "3.0.2"
+    facebookShimmer = "0.5.0"
+    androidCoreKtxVersion = "1.9.0"
+    androidAppCompatVersion = "1.6.0"
+    androidMaterialVersion = "1.7.0"
+    constraintLayoutVersion = "2.1.4"
+    junitVersion = "4.13.2"
+    androidJunitTests = "1.1.5"
+    androidEspressoCore = "3.5.1"
+    recyclerviewVersion = "1.2.1"
+    roomVersion = "2.4.3"
+    hiltVersion = "2.44"
+
+    libraries = [
+            coroutine              : "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutineVersion",
+            viewModel              : "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion",
+            liveData               : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion",
+            lifecycleRuntime       : "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion",
+            retrofit               : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            retrofitGsonConverter  : "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+            glide                  : "com.github.bumptech.glide:glide:$glideVersion",
+            okhttpBom              : "com.squareup.okhttp3:okhttp-bom:$okhttp3Version",
+            okhttp                 : "com.squareup.okhttp3:okhttp",
+            okhttpLogginInterceptor: "com.squareup.okhttp3:logging-interceptor",
+            gson                   : "com.google.code.gson:gson:$gsonVersion",
+            fragment               : "androidx.fragment:fragment:$fragmentVersion",
+            fragmentKtx            : "androidx.fragment:fragment-ktx:$fragmentVersion",
+            navigationFragment     : "androidx.navigation:navigation-fragment-ktx:$navigationVersion",
+            navigationUi           : "androidx.navigation:navigation-ui-ktx:$navigationVersion",
+            navigationRuntime      : "androidx.navigation:navigation-runtime-ktx:$navigationVersion",
+            koinCore               : "io.insert-koin:koin-core:$koinVersion",
+            koinAndroid            : "io.insert-koin:koin-android:$koinVersion",
+            facebookShimmer        : "com.facebook.shimmer:shimmer:$facebookShimmer",
+            coreKtx                : "androidx.core:core-ktx:$androidCoreKtxVersion",
+            appCompat              : "androidx.appcompat:appcompat:$androidAppCompatVersion",
+            androidMaterial        : "com.google.android.material:material:$androidMaterialVersion",
+            constraintLayout       : "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion",
+            recyclerView           : "androidx.recyclerview:recyclerview:$recyclerviewVersion",
+            room                   : "androidx.room:room-runtime:$roomVersion",
+            roomAnnotation         : "androidx.room:room-compiler:$roomVersion",
+            hilt                   : "com.google.dagger:hilt-android:$hiltVersion",
+            hiltAnnotation         : "com.google.dagger:hilt-compiler:$hiltVersion",
+    ]
+
+    librariesTest = [
+            liveDataTest  : "androidx.arch.core:core-testing:$archVersion",
+            coroutinesTest: "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutineVersion",
+            junit         : "junit:junit:$junitVersion",
+            junitAndroid  : "androidx.test.ext:junit:$androidJunitTests",
+            espressoCore  : "androidx.test.espresso:espresso-core:$androidEspressoCore",
+            roomTests     : "androidx.room:room-testing:$roomVersion",
+    ]
+}
