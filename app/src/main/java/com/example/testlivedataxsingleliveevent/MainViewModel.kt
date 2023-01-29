@@ -11,7 +11,6 @@ import kotlinx.coroutines.launch
 class MainViewModel : ViewModel() {
 
     private val _state = MutableLiveData<MainState>().apply {
-        //definindo ou não um valor na inicialização, ao começar a ser observado, emitirá seu valor.
         value = MainState()
     }
     val state = _state as LiveData<MainState>

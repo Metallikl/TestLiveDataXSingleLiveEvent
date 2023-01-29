@@ -35,7 +35,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/baseline_android_24" />
+        app:srcCompat="@drawable/baseline_android_24"
+        android:visibility="gone"/>
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -45,7 +46,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        android:visibility="gone"/>
 
     <Button
         android:id="@+id/btnReset"
