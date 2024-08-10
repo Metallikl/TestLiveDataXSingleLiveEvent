@@ -6,7 +6,7 @@ plugins {
 //importando arquivo que concentra as dependecias do projeto
 apply from: '../dependencies.gradle'
 android {
-    namespace 'br.com.dluche.testlivedataxsingleliveevent'
+    namespace 'com.example.testlivedataxsingleliveevent'
     compileSdk 34
 
     defaultConfig {

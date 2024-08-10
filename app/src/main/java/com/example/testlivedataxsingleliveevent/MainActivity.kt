@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import com.example.testlivedataxsingleliveevent.databinding.ActivityMainBinding
 
+
 import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
