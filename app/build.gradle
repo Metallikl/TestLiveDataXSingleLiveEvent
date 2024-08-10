@@ -6,11 +6,11 @@ plugins {
 //importando arquivo que concentra as dependecias do projeto
 apply from: '../dependencies.gradle'
 android {
-    namespace 'com.example.testlivedataxsingleliveevent'
+    namespace 'br.com.dluche.testlivedataxsingleliveevent'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.testlivedataxsingleliveevent"
+        applicationId "br.com.dluche.testlivedataxsingleliveevent"
         minSdk 24
         targetSdk 34
         versionCode 2
