@@ -4,8 +4,6 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
-import androidx.lifecycle.LiveData
-import br.com.luche.FoodLogin.MainViewModel
 import com.example.testlivedataxsingleliveevent.databinding.ActivityMainBinding
 
 import com.google.android.material.snackbar.Snackbar

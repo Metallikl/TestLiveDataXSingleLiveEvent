@@ -1,4 +1,4 @@
-package br.com.luche.FoodLogin
+package com.example.testlivedataxsingleliveevent
 
 import android.util.Log
 import androidx.annotation.MainThread

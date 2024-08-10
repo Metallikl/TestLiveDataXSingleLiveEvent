@@ -1,4 +1,4 @@
-package br.com.luche.FoodLogin
+package com.example.testlivedataxsingleliveevent
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

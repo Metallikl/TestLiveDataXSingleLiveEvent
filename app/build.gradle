@@ -7,7 +7,7 @@ plugins {
 apply from: '../dependencies.gradle'
 android {
     namespace 'com.example.testlivedataxsingleliveevent'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.testlivedataxsingleliveevent"
